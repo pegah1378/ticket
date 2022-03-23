@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>theater ticket</title>
+  </head>
+  <style>
+    body{ 
+    background: linear-gradient(109.6deg, rgb(78, 112, 157) 11.2%, rgb(137, 164, 199) 65%, rgb(205, 213, 224) 100.2%);}
+    h1{
+      text-align: center;
+      color: #272343;
+      font-size: 50px;
+      
+    }
+    img{
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      border-radius: 10px;
+      border: solid black;
+      box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);}
+      h2{
+        text-align: center;
+        color: #272343;
+      }
+    
+      p{
+         line-height: 1.5;
+        text-align: center;
+        font-style: italic;
+        font-size: 18px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: inset;
+        padding: 30px 20px; 
+      }
+        
+      p::first-letter{
+        font-size: xx-large;
+      }
+      .info {
+   display: block;
+        margin: 0 auto;
+        text-align: center;
+        text-decoration: none;
+        
+        padding:15px;
+        color: #ED5EDD;
+        font-weight:normal;
+        font-size: 20px;
+
+      }
+      .info:hover{
+        color:#1C658C;
+        cursor: pointer;
+        text-decoration:underline;
+        
+      }
+      button{
+        display: block;
+        margin: 0 auto;
+        padding: 30px;
+        padding: 20px 60px 20px 60px;
+        font-size: x-large;
+        font-weight: bolder;
+        background-color: #1A5F7A;
+        border-radius: 5px;
+        border: 4px solid #086E7D ;
+        box-shadow:12px 12px 2px 1px rgba(0, 0, 255, .2);
+
+      }
+      button:hover{
+        background-color: #086E7D;
+        transition: all 200ms ease-in-out;
+        cursor:pointer;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+      .contact{
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        color: #272343;
+        padding: 20px;
+      }
+      .email{
+        color: blueviolet
+      }
+      a{
+        text-decoration: none;
+      }
+      a:hover{
+        color: #272343;
+      }
+    a:visited{
+      color: blueviolet;
+    }
+
+  
+  </style>
+  <body>
+    <div class="container">
+    <hr />
+    <h1> <em>Les Misérables</h1></em>
+    <hr />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/027/060/original/02new-miz1-superJumbo.jpg?1644664167"
+      alt=" Les Misérables theater"
+      width="600px"
+    />
+    <h2> 🖋 The summery : </h2>
+    <p>
+      After 19 years as a prisoner,<strong>  Jean Valjean</strong> is freed by
+      Javert , the officer in charge of the prison workforce.<br/>
+      Valjean promptly breaks parole but later uses money from stolen silver to
+      reinvent himself as a mayor and factory owner. Javert vows to bring
+      Valjean back to prison. <br/>Eight years later, Valjean becomes the guardian of
+      a child named Cosette after her mother's death, but
+      Javert's relentless pursuit means that peace will be a long time coming.
+    </p>
+    <a href="https://en.wikipedia.org/wiki/Les_Mis%C3%A9rables" target="-blank" class="info"> More information </a> <br/>
+    <button>👉Buy ticket </button>
+    <div class="contact">
+      <span class="email">Email:</span><a href="www.pegah1251@gmail.com">  pegah1251@gmail.com</a>
+    </div>
+</div>
+  <script>
+      function buybutton() {
+        let name = prompt("what is your first name?");
+        let age = prompt("how old are you ?");
+        let check = alert("check the heading of page ☺")
+        let heading = document.querySelector("h1");
+        if (age >= 18) {
+          heading.innerHTML = "Hi," + name + "! Hope you enjoy theater ";
+        } else {
+          heading.innerHTML = "Sorry," + name + "! This theater is not suitable for your age  ";
+        }
+      }
+      let buybut = document.querySelector("button");
+      buybut.addEventListener("click", buybutton);
+    </script>
+  </body>
+</html>
